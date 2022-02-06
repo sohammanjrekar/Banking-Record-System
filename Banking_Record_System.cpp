@@ -1,7 +1,6 @@
 // Project Name : Banking Record System
 // Authour : Soham manjrekar
 
-
 //***************************************************************
 //                   HEADER FILE USED IN PROJECT
 //****************************************************************
@@ -35,24 +34,23 @@ public:
 
 void account::create_account()
 {
-    cout<<"\nEnter The account No. :";
+    cout<<"\nEnter The account No. :\t";
     cin>>acno;
-    cout<<"\n\nEnter The Name of The account Holder : ";
+    cout<<"\n\nEnter The Name of The account Holder :\t";
     cin.ignore();
     cin.getline(name,50);
-    cout<<"\nEnter Type of The account (C/S) : ";
+    cout<<"\nEnter Type of The account (C/S) :\t";
     cin>>type;
     type=toupper(type);
-    cout<<"\nEnter The Initial amount(>=500 for Saving and >=1000 for current ) : ";
+    cout<<"\nEnter The Initial amount(>=500 for Saving and >=1000 for current ) :\t";
     cin>>deposit;
-    cout<<"\n\n\nAccount Created..";
+    cout<<"\n\n\nAccount Created.........";
 }
 
 void account::show_account() const
 {
     cout<<"\nAccount No. : "<<acno;
-    cout<<"\nAccount Holder Name : ";
-    cout<<name;
+    cout<<"\nAccount Holder Name : "<<name;
     cout<<"\nType of Account : "<<type;
     cout<<"\nBalance amount : "<<deposit;
 }
@@ -70,7 +68,6 @@ void account::modify()
     cout<<"\nModify Balance amount : ";
     cin>>deposit;
 }
-
 
 void account::dep(int x)
 {
@@ -126,16 +123,16 @@ int main()
     do
     {
         system("cls");
-        cout<<"\n\n\n\tMAIN MENU";
-        cout<<"\n\n\t01. NEW ACCOUNT";
-        cout<<"\n\n\t02. DEPOSIT AMOUNT";
-        cout<<"\n\n\t03. WITHDRAW AMOUNT";
-        cout<<"\n\n\t04. BALANCE ENQUIRY";
-        cout<<"\n\n\t05. ALL ACCOUNT HOLDER LIST";
-        cout<<"\n\n\t06. CLOSE AN ACCOUNT";
-        cout<<"\n\n\t07. MODIFY AN ACCOUNT";
-        cout<<"\n\n\t08. EXIT";
-        cout<<"\n\n\tSelect Your Option (1-8) ";
+        cout<<"\n\n\n\t\t\t\tMAIN MENU";
+        cout<<"\n\n\t\t\t01. NEW ACCOUNT";
+        cout<<"\n\n\t\t\t02. DEPOSIT AMOUNT";
+        cout<<"\n\n\t\t\t03. WITHDRAW AMOUNT";
+        cout<<"\n\n\t\t\t04. BALANCE ENQUIRY";
+        cout<<"\n\n\t\t\t05. ALL ACCOUNT HOLDER LIST";
+        cout<<"\n\n\t\t\t06. CLOSE AN ACCOUNT";
+        cout<<"\n\n\t\t\t07. MODIFY AN ACCOUNT";
+        cout<<"\n\n\t\t\t08. EXIT";
+        cout<<"\n\n\t\t\tSelect Your Option (1-8) ";
         cin>>ch;
         system("cls");
         switch(ch)
